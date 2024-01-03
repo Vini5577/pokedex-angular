@@ -1,8 +1,12 @@
 <img
   src="https://blueedtech.com.br/wp-content/themes/blue/dist/images/logo-blue-croped.gif"
-  width="100"
+  width="200"
 />
 
 <div class="pokemon-list">
-  <app-pokemon-card *ngFor="let pokemon of pokemons; index as i" [pokemon]="pokemon" [numero]="i + 1"></app-pokemon-card>
+  <app-pokemon-card
+    *ngFor="let pokemon of pokemons; index as i"
+    [pokemon]="pokemon.name"
+    [numero]="i + 1"
+  ></app-pokemon-card>
 </div>
